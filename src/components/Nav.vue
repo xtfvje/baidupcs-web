@@ -24,7 +24,7 @@
               <Badge dot v-if="updateFlag">更新</Badge>
               <span v-else>更新</span>
             </MenuItem>
-            <MenuItem name="lock" @click.native="startSetLockPwd">设置锁定密码</MenuItem>
+            <!--<MenuItem name="lock" @click.native="startSetLockPwd">设置锁定密码</MenuItem>-->
             <MenuItem name="switch" @click.native="switchUser">切换账号</MenuItem>
             <MenuItem name="logout" @click.native="logout">退出</MenuItem>
           </Submenu>
@@ -116,11 +116,12 @@
       showProfile() {
         this.$Modal.success({
           title: 'BaiduPCS-Go Web版本',
-          content: `<i class="ivu-icon ivu-icon-ios-mail" style="font-size: 24px"></i> liuzhuoling2011@hotmail.com <br />
-                                  <i class="ivu-icon ivu-icon-logo-github" style="font-size: 24px"></i> <a href="https://github.com/liuzhuoling2011/baidupcs-web" target="_blank">https://github.com/liuzhuoling2011/baidupcs-web</a> <br />
-                                  <br />
-                                  感谢 iikira 提供了高速, 稳定可靠的百度云后台服务<br />
-                                  <i class="ivu-icon ivu-icon-logo-github" style="font-size: 24px"></i> <a href="https://github.com/iikira/BaiduPCS-Go" target="_blank">https://github.com/iikira/BaiduPCS-Go</a>`
+          content: `<div style="text-align: center;padding-right: 42px;"><img style="width: 50%" src="http://qiniu.zoranjojo.top/zoranjojo.jpg"/></div>
+                    <i class="ivu-icon ivu-icon-md-heart" style="font-size: 24px"></i> 可以关注公众号咨询问题或者获得最新的消息
+                    <i class="ivu-icon ivu-icon-logo-github" style="font-size: 24px"></i> <a href="https://github.com/liuzhuoling2011/baidupcs-web" target="_blank">https://github.com/liuzhuoling2011/baidupcs-web</a> <br />
+                    <br />
+                    感谢 iikira 提供了高速, 稳定可靠的百度云后台服务<br />
+                    <i class="ivu-icon ivu-icon-logo-github" style="font-size: 24px"></i> <a href="https://github.com/iikira/BaiduPCS-Go" target="_blank">https://github.com/iikira/BaiduPCS-Go</a>`
         })
       },
       async startSet() {
